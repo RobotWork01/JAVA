@@ -2,7 +2,7 @@
 【絶対できる！】Javaでのじゃんけんゲームの作り方
 
 <JAVAプログラムファイル名>
-ComputerHand.java
+ComputerHand.java<br/>
 Judge.java
 Main.java
 PanelMaker.java
