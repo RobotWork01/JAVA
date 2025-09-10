@@ -36,12 +36,12 @@ public class TextMaker {
 	 * @return label
 	 **********************************************************/
 	public static JLabel makeText(String str, int size, Color color) {
-		JLabel label = new JLabel(str);							//JLabelクラスをインスタンス化
-		label.setForeground(color);									//テキストの文字を白にする
-		label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));//テキストのフォントを設定
-		label.setHorizontalAlignment(JLabel.CENTER);				//テキストの位置を、水平方向の中心にする
-		label.setVerticalAlignment(JLabel.CENTER);					//テキストの位置を、垂直方向の中心にする
-		return label;												//作ったテキストを返す
+		JLabel label = new JLabel(str);
+		label.setForeground(color);
+		label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));
+		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setVerticalAlignment(JLabel.CENTER);
+		return label;
 	}
 
 }
