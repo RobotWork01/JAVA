@@ -138,11 +138,11 @@ public class Main {
 	public static JLabel makeText(String str, int size, Color color) {
 		JLabel label = new JLabel(str);							//JLabelクラスをインスタンス化
 		{
-			label.setForeground(color);									//テキストの文字を白にする
-			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));//テキストのフォントを設定
-			label.setHorizontalAlignment(JLabel.CENTER);				//テキストの位置を、水平方向の中心にする
-			label.setVerticalAlignment(JLabel.CENTER);					//テキストの位置を、垂直方向の中心にする
-			return label;												//作ったテキストを返す
+			label.setForeground(color);																	//テキストの文字を白にする
+			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));	//テキストのフォントを設定
+			label.setHorizontalAlignment(JLabel.CENTER);								//テキストの位置を、水平方向の中心にする
+			label.setVerticalAlignment(JLabel.CENTER);									//テキストの位置を、垂直方向の中心にする
+			return label;																								//作ったテキストを返す
 		}
 	}
 
@@ -161,9 +161,9 @@ public class Main {
 			/*------------------------------------------------------------*
 			 *コンピュータの手（数値）を取得してcomputerHandNumに設定する
 			 *------------------------------------------------------------*/
-			int computerHandNum = ComputerHand.getComputerHand();		//コンピュータの手（数値）をランダムに取得
+			int computerHandNum = ComputerHand.getComputerHand();			//コンピュータの手（数値）をランダムに取得
 			{
-				String computerHand = hands[computerHandNum];				//数値からコンピュータの手を取り出して代入
+				String computerHand = hands[computerHandNum];						//数値からコンピュータの手を取り出して代入
 				contentsLabel.setText("コンピュータは、"+computerHand);	//コンテンツパネルのテキストに、コンピュータの手を指定
 			}
 
