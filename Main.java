@@ -47,12 +47,12 @@ public class Main {
 		/*************************************************
 		 *フレームの設定
 		 *************************************************/
-		JFrame frame = new JFrame("じゃんけんゲーム");				//JFrameクラスをインスタンス化
+		JFrame frame = new JFrame("じゃんけんゲーム");						//JFrameクラスをインスタンス化
 		{
-			frame.setSize(640, 480);								//ウィンドウサイズの設定では640*480にしています。
-			frame.setLocationRelativeTo(null);						//ウィンドウが画面の中心に表示されるようにしています。
+			frame.setSize(640, 480);															//ウィンドウサイズの設定では640*480にしています。
+			frame.setLocationRelativeTo(null);										//ウィンドウが画面の中心に表示されるようにしています。
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	//ウィンドウ上部の✕をクリックしたときに、アプリも終了するようにしています。
-			frame.setResizable(false);								//ゲーム全体のレイアウトが崩れないように、ウィンドウのサイズを変更できないようにしています。
+			frame.setResizable(false);														//ゲーム全体のレイアウトが崩れないように、ウィンドウのサイズを変更できないようにしています。
 		}
 
 
@@ -60,11 +60,11 @@ public class Main {
 		 *ヘッダーパネルの設定
 		 *************************************************/
 		{
-			JPanel headerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);							//ヘッダーパネルを作成
-			headerPanel.setLayout(new BorderLayout());													//ヘッダーパネルに、レイアウトマネージャとしてBorderLayoutを指定
+			JPanel headerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);										//ヘッダーパネルを作成
+			headerPanel.setLayout(new BorderLayout());																					//ヘッダーパネルに、レイアウトマネージャとしてBorderLayoutを指定
 			headerLabel = TextMaker.makeText("「さあ、じゃんけんで勝負だ！」", 24, Color.WHITE);		//テキストを作成
-			headerPanel.add(headerLabel);																//ヘッダーパネルにテキストを追加
-			frame.add(headerPanel, BorderLayout.NORTH);													//ウィンドウにヘッダーパネルを追加
+			headerPanel.add(headerLabel);																												//ヘッダーパネルにテキストを追加
+			frame.add(headerPanel, BorderLayout.NORTH);																					//ウィンドウにヘッダーパネルを追加
 		}
 
 		/*************************************************
@@ -72,26 +72,26 @@ public class Main {
 		 *************************************************/
 		{
 			JPanel contentsPanel = PanelMaker.makePanel(Color.WHITE);								//コンテンツパネルを作成
-			contentsPanel.setLayout(new BorderLayout());												//レイアウトマネージャとしてBorderLayoutを指定
-			contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);					//テキストを作成
-			contentsPanel.add(contentsLabel);															//コンテンツパネルにテキストを追加
-			frame.add(contentsPanel, BorderLayout.CENTER);												//ウィンドウにコンテンツパネルを追加
+			contentsPanel.setLayout(new BorderLayout());														//レイアウトマネージャとしてBorderLayoutを指定
+			contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);			//テキストを作成
+			contentsPanel.add(contentsLabel);																				//コンテンツパネルにテキストを追加
+			frame.add(contentsPanel, BorderLayout.CENTER);													//ウィンドウにコンテンツパネルを追加
 		}
 
 		/*************************************************
 		 *フッターパネルの設定
 		 *************************************************/
 		{
-			JPanel footerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);							//フッターパネルを作成
-			footerPanel.setLayout(new GridLayout());													//フッターパネルに、レイアウトマネージャとしてGridLayoutを指定
-			for (String hand : hands) {																//じゃんけんの手の配列
-				JButton button = new JButton(hand);													//JButtonクラスをインスタンス化
-				button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));								//ボタンのフォントを設定
+			JPanel footerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);				//フッターパネルを作成
+			footerPanel.setLayout(new GridLayout());																//フッターパネルに、レイアウトマネージャとしてGridLayoutを指定
+			for (String hand : hands) {																							//じゃんけんの手の配列
+				JButton button = new JButton(hand);																		//JButtonクラスをインスタンス化
+				button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));							//ボタンのフォントを設定
 				button.addActionListener(new ButtonActionListener());									//ボタンが押されたら、ButtonActionListenerクラスのactionPerformedメソッドを実行
-				footerPanel.add(button);																//手のボタンをフッターパネルに追加
+				footerPanel.add(button);																							//手のボタンをフッターパネルに追加
 			}
-			frame.add(footerPanel, BorderLayout.SOUTH);													//ウィンドウにフッターパネルを追加
-			frame.setVisible(true);																		//非表示だったウィンドウを表示しています。
+			frame.add(footerPanel, BorderLayout.SOUTH);															//ウィンドウにフッターパネルを追加
+			frame.setVisible(true);																									//非表示だったウィンドウを表示しています。
 		}
 
 	}
@@ -105,11 +105,11 @@ public class Main {
 	 * @return panel
 	 *********************************************************************/
 	public static JPanel makePanel(Color color, int width, int height) {
-		JPanel panel = new JPanel();								//JPanelクラスをインスタンス化
+		JPanel panel = new JPanel();														//JPanelクラスをインスタンス化
 		{
-			panel.setBackground(color);								//パネルの色を変更する
+			panel.setBackground(color);														//パネルの色を変更する
 			panel.setPreferredSize(new Dimension(width, height));	//パネルのサイズを「width、height」に設定
-			return panel;											//作ったパネルを返す
+			return panel;																					//作ったパネルを返す
 		}
 	}
 
@@ -123,7 +123,7 @@ public class Main {
 		JPanel panel = new JPanel();								//JPanelクラスをインスタンス化
 		{
 			panel.setBackground(color);								//パネルの色を変更する
-			return panel;											//作ったパネルを返す
+			return panel;															//作ったパネルを返す
 		}
 	}
 
