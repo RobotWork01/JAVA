@@ -47,12 +47,12 @@ public class Main {
 		/*************************************************
 		 *フレームの設定
 		 *************************************************/
-		JFrame frame = new JFrame("じゃんけんゲーム");						//JFrameクラスをインスタンス化
+		JFrame frame = new JFrame("じゃんけんゲーム");
 		{
-			frame.setSize(640, 480);															//ウィンドウサイズの設定では640*480にしています。
-			frame.setLocationRelativeTo(null);										//ウィンドウが画面の中心に表示されるようにしています。
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	//ウィンドウ上部の✕をクリックしたときに、アプリも終了するようにしています。
-			frame.setResizable(false);														//ゲーム全体のレイアウトが崩れないように、ウィンドウのサイズを変更できないようにしています。
+			frame.setSize(640, 480);
+			frame.setLocationRelativeTo(null);
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setResizable(false);
 		}
 
 
@@ -60,40 +60,39 @@ public class Main {
 		 *ヘッダーパネルの設定
 		 *************************************************/
 		{
-			JPanel headerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);										//ヘッダーパネルを作成
-			headerPanel.setLayout(new BorderLayout());																					//ヘッダーパネルに、レイアウトマネージャとしてBorderLayoutを指定
-			headerLabel = TextMaker.makeText("「さあ、じゃんけんで勝負だ！」", 24, Color.WHITE);		//テキストを作成
-			headerPanel.add(headerLabel);																												//ヘッダーパネルにテキストを追加
-			frame.add(headerPanel, BorderLayout.NORTH);																					//ウィンドウにヘッダーパネルを追加
+			JPanel headerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);
+			headerPanel.setLayout(new BorderLayout());
+			headerLabel = TextMaker.makeText("「さあ、じゃんけんで勝負だ！」", 24, Color.WHITE);
+			headerPanel.add(headerLabel);
+			frame.add(headerPanel, BorderLayout.NORTH);
 		}
 
 		/*************************************************
 		 *コンテンツパネルの設定
 		 *************************************************/
 		{
-			JPanel contentsPanel = PanelMaker.makePanel(Color.WHITE);								//コンテンツパネルを作成
-			contentsPanel.setLayout(new BorderLayout());														//レイアウトマネージャとしてBorderLayoutを指定
-			contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);			//テキストを作成
-			contentsPanel.add(contentsLabel);																				//コンテンツパネルにテキストを追加
-			frame.add(contentsPanel, BorderLayout.CENTER);													//ウィンドウにコンテンツパネルを追加
+			JPanel contentsPanel = PanelMaker.makePanel(Color.WHITE);
+			contentsPanel.setLayout(new BorderLayout());
+			contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);
+			contentsPanel.add(contentsLabel);
+			frame.add(contentsPanel, BorderLayout.CENTER);
 		}
 
 		/*************************************************
 		 *フッターパネルの設定
 		 *************************************************/
 		{
-			JPanel footerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);				//フッターパネルを作成
-			footerPanel.setLayout(new GridLayout());																//フッターパネルに、レイアウトマネージャとしてGridLayoutを指定
-			for (String hand : hands) {																							//じゃんけんの手の配列
-				JButton button = new JButton(hand);																		//JButtonクラスをインスタンス化
-				button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));							//ボタンのフォントを設定
-				button.addActionListener(new ButtonActionListener());									//ボタンが押されたら、ButtonActionListenerクラスのactionPerformedメソッドを実行
-				footerPanel.add(button);																							//手のボタンをフッターパネルに追加
+			JPanel footerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);
+			footerPanel.setLayout(new GridLayout());
+			for (String hand : hands) {
+				JButton button = new JButton(hand);
+				button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));
+				button.addActionListener(new ButtonActionListener());
+				footerPanel.add(button);
 			}
-			frame.add(footerPanel, BorderLayout.SOUTH);															//ウィンドウにフッターパネルを追加
-			frame.setVisible(true);																									//非表示だったウィンドウを表示しています。
+			frame.add(footerPanel, BorderLayout.SOUTH);
+			frame.setVisible(true);
 		}
-
 	}
 
 	/*********************************************************************
@@ -105,11 +104,11 @@ public class Main {
 	 * @return panel
 	 *********************************************************************/
 	public static JPanel makePanel(Color color, int width, int height) {
-		JPanel panel = new JPanel();														//JPanelクラスをインスタンス化
+		JPanel panel = new JPanel();
 		{
-			panel.setBackground(color);														//パネルの色を変更する
-			panel.setPreferredSize(new Dimension(width, height));	//パネルのサイズを「width、height」に設定
-			return panel;																					//作ったパネルを返す
+			panel.setBackground(color);
+			panel.setPreferredSize(new Dimension(width, height));
+			return panel;
 		}
 	}
 
@@ -120,10 +119,10 @@ public class Main {
 	 * @return panel
 	 ********************************************************************/
 	public static JPanel makePanel(Color color) {
-		JPanel panel = new JPanel();								//JPanelクラスをインスタンス化
+		JPanel panel = new JPanel();
 		{
-			panel.setBackground(color);								//パネルの色を変更する
-			return panel;															//作ったパネルを返す
+			panel.setBackground(color);
+			return panel;
 		}
 	}
 
@@ -136,13 +135,13 @@ public class Main {
 	 * @return label
 	 *******************************************************************/
 	public static JLabel makeText(String str, int size, Color color) {
-		JLabel label = new JLabel(str);							//JLabelクラスをインスタンス化
+		JLabel label = new JLabel(str);
 		{
-			label.setForeground(color);																	//テキストの文字を白にする
-			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));	//テキストのフォントを設定
-			label.setHorizontalAlignment(JLabel.CENTER);								//テキストの位置を、水平方向の中心にする
-			label.setVerticalAlignment(JLabel.CENTER);									//テキストの位置を、垂直方向の中心にする
-			return label;																								//作ったテキストを返す
+			label.setForeground(color);
+			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));
+			label.setHorizontalAlignment(JLabel.CENTER);
+			label.setVerticalAlignment(JLabel.CENTER);
+			return label;
 		}
 	}
 
@@ -161,10 +160,10 @@ public class Main {
 			/*------------------------------------------------------------*
 			 *コンピュータの手（数値）を取得してcomputerHandNumに設定する
 			 *------------------------------------------------------------*/
-			int computerHandNum = ComputerHand.getComputerHand();			//コンピュータの手（数値）をランダムに取得
+			int computerHandNum = ComputerHand.getComputerHand();
 			{
-				String computerHand = hands[computerHandNum];						//数値からコンピュータの手を取り出して代入
-				contentsLabel.setText("コンピュータは、"+computerHand);	//コンテンツパネルのテキストに、コンピュータの手を指定
+				String computerHand = hands[computerHandNum];
+				contentsLabel.setText("コンピュータは、"+computerHand);
 			}
 
 			/*------------------------------------------------------------*
@@ -172,7 +171,7 @@ public class Main {
 			 *------------------------------------------------------------*/
 			int playerHandNum=0;//プレイヤーが出した手に対応した数値を入れるための変数
 			{
-				for (int i=0; i<hands.length; i++) {						//じゃんけんの手の配列
+				for (int i=0; i<hands.length; i++) {
 					if (hands[i] == e.getActionCommand()) {
 						playerHandNum=i;
 						break;
@@ -188,9 +187,6 @@ public class Main {
 			 *------------------------------------------------------------*/
 			String serif = Judge.getResultText(playerHandNum, computerHandNum);
 			headerLabel.setText(serif);//ヘッダーにセリフを表示
-
 		}
-
 	}
-
 }
