@@ -36,13 +36,9 @@ public class PanelMaker {
 	 * @return panel
 	 ***********************************************************/
 	public static JPanel makePanel(Color color, int width, int height) {
-		//JPanelクラスをインスタンス化
 		JPanel panel = new JPanel();
-		//パネルの色を変更する
 		panel.setBackground(color);
-		//パネルのサイズを「width、height」に設定
 		panel.setPreferredSize(new Dimension(width, height));
-		//作ったパネルを返す
 		return panel;
 	}
 
@@ -53,11 +49,8 @@ public class PanelMaker {
 	 * @return panel
 	 ***********************************************************/
 	public static JPanel makePanel(Color color) {
-		//JPanelクラスをインスタンス化
 		JPanel panel = new JPanel();
-		//パネルの色を変更する
 		panel.setBackground(color);
-		//作ったパネルを返す
 		return panel;
 	}
 
