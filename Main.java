@@ -45,14 +45,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*************************************************
-		 *フレームの設定
+		 *ウィンドウフレームの設定
 		 *************************************************/
+		//ウィンドウフレームを作成
 		JFrame frame = new JFrame("じゃんけんゲーム");
 		{
-			frame.setSize(640, 480);
-			frame.setLocationRelativeTo(null);
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			frame.setResizable(false);
+			frame.setSize(640, 480);                                //ウィンドウフレームサイズ縦640*横480にする
+			frame.setLocationRelativeTo(null);                     //ウィンドウフレームが画面の中心に表示されるようにする
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //ウィンドウフレーム上部の✕をクリックしたときに、アプリも終了する
+			frame.setResizable(false);								//ゲーム全体のレイアウトが崩れないように、ウィンドウのサイズを変更できないようにする
 		}
 
 
@@ -60,10 +61,14 @@ public class Main {
 		 *ヘッダーパネルの設定
 		 *************************************************/
 		{
+			//ヘッダーパネルを作成
 			JPanel headerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);
-			headerPanel.setLayout(new BorderLayout());
-			headerLabel = TextMaker.makeText("「さあ、じゃんけんで勝負だ！」", 24, Color.WHITE);
-			headerPanel.add(headerLabel);
+			{
+				headerPanel.setLayout(new BorderLayout());                                              //レイアウトマネージャとしてBorderLayoutを指定
+				headerLabel = TextMaker.makeText("「さあ、じゃんけんで勝負だ！」", 24, Color.WHITE); //テキストを作成
+				headerPanel.add(headerLabel);                                                          //ヘッダーパネルにテキストを追加
+			}
+			//ウィンドウフレームにコンテンツパネルのヘッダー部分を追加
 			frame.add(headerPanel, BorderLayout.NORTH);
 		}
 
@@ -71,39 +76,57 @@ public class Main {
 		 *コンテンツパネルの設定
 		 *************************************************/
 		{
+			//コンテンツパネルを作成
 			JPanel contentsPanel = PanelMaker.makePanel(Color.WHITE);
-			contentsPanel.setLayout(new BorderLayout());
-			contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);
-			contentsPanel.add(contentsLabel);
+			{
+				contentsPanel.setLayout(new BorderLayout());                             //レイアウトマネージャとしてBorderLayoutを指定
+				contentsLabel = TextMaker.makeText("じゃんけん……", 54, Color.BLACK);//テキストを作成
+				contentsPanel.add(contentsLabel);                                       //コンテンツパネルにラベルを追加
+			}
+			//ウィンドウフレームにコンテンツパネルのセンター部分を追加
 			frame.add(contentsPanel, BorderLayout.CENTER);
+
 		}
 
 		/*************************************************
 		 *フッターパネルの設定
 		 *************************************************/
 		{
+			//フッターパネルを作成
 			JPanel footerPanel = PanelMaker.makePanel(Color.BLACK, 640, 50);
 			footerPanel.setLayout(new GridLayout());
+
+			//じゃんけんの手の配列をループして、全ての手のボタンを追加する
 			for (String hand : hands) {
+
+				//ボタンの作成
 				JButton button = new JButton(hand);
-				button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));
-				button.addActionListener(new ButtonActionListener());
+				{
+					button.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, 24));//ボタンのフォントを設定
+					button.addActionListener(new ButtonActionListener());      //ボタンが押された時(ButtonActionListenerクラスのactionPerformedメソッドを実行)
+				}
+				//手のボタンをフッターパネルに追加
 				footerPanel.add(button);
 			}
+			//ウィンドウフレームにコンテンツパネルのフッダー部分を追加
 			frame.add(footerPanel, BorderLayout.SOUTH);
+
+			//ウィンドウフレームを表示する
 			frame.setVisible(true);
 		}
+
 	}
 
 	/*********************************************************************
 	 *パネルを作るメソッド（幅と高さを指定する用）
 	 *
-	 * @param  color
-	 * @param  width
-	 * @param  height
-	 * @return panel
+	 * @param  color  パネルの色
+	 * @param  width  パネルの幅
+	 * @param  height パネルの高さ
+	 * @return panel  作ったパネルを返す
 	 *********************************************************************/
 	public static JPanel makePanel(Color color, int width, int height) {
+		//パネルの作成
 		JPanel panel = new JPanel();
 		{
 			panel.setBackground(color);
@@ -115,10 +138,11 @@ public class Main {
 	/********************************************************************
 	 *パネルを作るメソッド（幅と高さを指定しない用）
 	 *
-	 * @param  color
-	 * @return panel
+	 * @param  color  パネルの色
+	 * @return panel  作ったパネルを返す
 	 ********************************************************************/
 	public static JPanel makePanel(Color color) {
+		//パネルの作成
 		JPanel panel = new JPanel();
 		{
 			panel.setBackground(color);
@@ -127,20 +151,21 @@ public class Main {
 	}
 
 	/*******************************************************************
-	 *テキストを作るメソッド
+	 *ラベルを作るメソッド
 	 *
-	 * @param  str
-	 * @param  size
-	 * @param  color
-	 * @return label
+	 * @param  str        キャプションの値
+	 * @param  size       キャプションの文字サイズ
+	 * @param  color      キャプションの文字色
+	 * @return label      作成したラベルを返す
 	 *******************************************************************/
 	public static JLabel makeText(String str, int size, Color color) {
+		//ラベルの作成
 		JLabel label = new JLabel(str);
 		{
 			label.setForeground(color);
 			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));
-			label.setHorizontalAlignment(JLabel.CENTER);
-			label.setVerticalAlignment(JLabel.CENTER);
+			label.setHorizontalAlignment(JLabel.CENTER);//縦位置を、水平方向の中心にする
+			label.setVerticalAlignment(JLabel.CENTER);  //横位置を、垂直方向の中心にする
 			return label;
 		}
 	}
@@ -157,36 +182,44 @@ public class Main {
 		 * @return なし
 		 ************************************************************/
 		public void actionPerformed(ActionEvent e) {
-			/*------------------------------------------------------------*
-			 *コンピュータの手（数値）を取得してcomputerHandNumに設定する
-			 *------------------------------------------------------------*/
+			/*----------------------------------*
+			 *コンピュータの手（じゃんけん）
+			 *----------------------------------*/
+			//コンピュータの手（数値）をランダムに取得
 			int computerHandNum = ComputerHand.getComputerHand();
 			{
+				//じゃんけんの手の配列より、文字列を取得
 				String computerHand = hands[computerHandNum];
 				contentsLabel.setText("コンピュータは、"+computerHand);
 			}
 
-			/*------------------------------------------------------------*
-			 *プレイヤーが出した手の数値を探してplayerHandNumに設定する
-			 *------------------------------------------------------------*/
-			int playerHandNum=0;//プレイヤーが出した手に対応した数値を入れるための変数
+			/*----------------------------------*
+			 *プレイヤーが出した手（じゃんけん）
+			 *----------------------------------*/
+			//プレイヤーが出した手に対応した数値を入れるための変数
+			int playerHandNum=0;
 			{
+				//じゃんけんの手の配列の中をループする
 				for (int i=0; i<hands.length; i++) {
+					//押したボタンのキャプションとじゃんけんの手の配列の中を比較する
 					if (hands[i] == e.getActionCommand()) {
 						playerHandNum=i;
 						break;
 					}
 				}
-				//コンテンツパネルのテキストに、プレイヤーの手を追加
+				//ラベルに、プレイヤー(あなた)の手を追加
 				String playerHand = hands[playerHandNum];
 				contentsLabel.setText("<html>"+contentsLabel.getText()+"<br>あなたは、"+playerHand+"</html>");
 			}
 
-			/*------------------------------------------------------------*
-			 *プレイヤーとコンピュータの手を比べて、結果のセリフを取得
-			 *------------------------------------------------------------*/
+			/*--------------------------------------------*
+			 *じゃんけん結果のセリフをヘッダーに表示する
+			 *--------------------------------------------*/
 			String serif = Judge.getResultText(playerHandNum, computerHandNum);
-			headerLabel.setText(serif);//ヘッダーにセリフを表示
+			headerLabel.setText(serif);
+
 		}
+
 	}
+
 }
