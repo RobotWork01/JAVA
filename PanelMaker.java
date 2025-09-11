@@ -30,28 +30,34 @@ public class PanelMaker {
 	/***********************************************************
 	 *パネルを作るメソッド（幅と高さを指定する用）
 	 *
-	 * @param color
-	 * @param width
-	 * @param height
-	 * @return panel
+	 * @param color  パネルの色
+	 * @param width  パネルの幅サイズ
+	 * @param height パネルの高さサイズ
+	 * @return panel 作ったパネルを返す
 	 ***********************************************************/
 	public static JPanel makePanel(Color color, int width, int height) {
+		//パネルの作成
 		JPanel panel = new JPanel();
-		panel.setBackground(color);
-		panel.setPreferredSize(new Dimension(width, height));
-		return panel;
+		{
+			panel.setBackground(color);
+			panel.setPreferredSize(new Dimension(width, height));
+			return panel;
+		}
 	}
 
 	/***********************************************************
 	 *パネルを作るメソッド（幅と高さを指定しない用）
 	 *
-	 * @param color
-	 * @return panel
+	 * @param color  パネルの色
+	 * @return panel 作ったパネルを返す
 	 ***********************************************************/
 	public static JPanel makePanel(Color color) {
+		//パネルの作成
 		JPanel panel = new JPanel();
-		panel.setBackground(color);
-		return panel;
+		{
+			panel.setBackground(color);
+			return panel;
+		}
 	}
 
 }
