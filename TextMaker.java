@@ -28,20 +28,23 @@ import javax.swing.JLabel;
 public class TextMaker {
 
 	/***********************************************************
-	 * テキストを作るメソッド
+	 * ラベルを作るメソッド
 	 *
-	 * @param str
-	 * @param size
-	 * @param color
-	 * @return label
+	 * @param str     キャプション値
+	 * @param size    キャプションの文字サイズ
+	 * @param color   キャプションの文字色
+	 * @return label  作成したラベルを返す
 	 **********************************************************/
 	public static JLabel makeText(String str, int size, Color color) {
+		//ラベルの作成
 		JLabel label = new JLabel(str);
-		label.setForeground(color);
-		label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));
-		label.setHorizontalAlignment(JLabel.CENTER);
-		label.setVerticalAlignment(JLabel.CENTER);
-		return label;
+		{
+			label.setForeground(color);
+			label.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, size));
+			label.setHorizontalAlignment(JLabel.CENTER); //縦位置を、水平方向の中心にする
+			label.setVerticalAlignment(JLabel.CENTER);   //横位置を、垂直方向の中心にする
+			return label;
+		}
 	}
 
 }
