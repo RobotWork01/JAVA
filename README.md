@@ -1,7 +1,7 @@
 参考：https://original-game.com/java-janken-game-program/#m_heading-13<br/>
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
- # $\textcolor{blue}{じゃんけんゲームJAVAプログラムファイル名一覧 }$</style> 
+ # $\textcolor{blue}{じゃんけんゲームJAVAプログラムファイル名一覧 }$
 
 ```
 ComputerHand.java
