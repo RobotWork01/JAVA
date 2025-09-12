@@ -1,11 +1,7 @@
 参考：https://original-game.com/java-janken-game-program/#m_heading-13<br/>
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
-<svg viewBox="0 0 100 20">
-  <text x="0" y="15" fill="red">色付きテキスト</text>
-</svg>
-
-<span style="color: blue;">じゃんけんゲームJAVAプログラムファイル名一覧 </span>
+$\textcolor{blue}{じゃんけんゲームJAVAプログラムファイル名一覧 }$ 
 
 ```
 ComputerHand.java
