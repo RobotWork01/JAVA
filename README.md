@@ -9,6 +9,49 @@ PanelMaker.java<br/>
 TextMaker.java<br/>
 <hr>
 <pre>
+●ダウンロードしたい場合
+  JankenGame.zipをお好みの場所にダウンロードしてください。
+<textarea>
+C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>tree/F
+フォルダー パスの一覧:  ボリューム Windows
+ボリューム シリアル番号は B825-1DF9 です
+C:.
+│  .classpath
+│  .project
+│
+├─.settings
+│      org.eclipse.jdt.core.prefs
+│
+├─bin
+│  │  JankenGame.jar
+│  │
+│  └─original_game
+│      └─com
+│          │  ComputerHand.class
+│          │  JankenGame.jar
+│          │  Judge.class
+│          │  Main$ButtonActionListener.class
+│          │  Main.class
+│          │  PanelMaker.class
+│          │  TextMaker.class
+│          │
+│          └─META-INF
+│                  MANIFEST.MF
+│
+└─src
+    └─original_game
+        └─com
+                ComputerHand.java
+                Dockerfile
+                Judge.java
+                Main.java
+                PanelMaker.java
+                render.yaml
+                TextMaker.java
+
+
+C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>
+</textarea>
 <b>＜開発時のJAVA実行方法＞</b>
 ●javawコマンドでJAVA実行に成功する。
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game>cd ..
