@@ -1,7 +1,7 @@
 参考：https://original-game.com/java-janken-game-program/#m_heading-13<br/>
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
-> JAVAプログラムファイル名
+> じゃんけんゲームJAVAプログラムファイル名
 ```
 ComputerHand.java
 Judge.java
@@ -9,7 +9,7 @@ Main.java
 PanelMaker.java
 TextMaker.java
 ```
-> :grinning:ダウンロードしたい場合
+> :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合
 > JankenGame.zipをお好みの場所にダウンロードしてください。
 
 JankenGame.zip:
