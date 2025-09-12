@@ -11,7 +11,7 @@ PanelMaker.java
 TextMaker.java
 ```
 
-# :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合<br/>
+# :grinning: $\textcolor{green}{じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合}$
 
 [JankenGame.zip](https://github.com/RobotWork01/JAVA/blob/main/JankenGame.zip)をお好みの場所にダウンロードしてください。
 
