@@ -139,7 +139,7 @@ original_game/com/PanelMaker.classを追加中です(入=855)(出=499)(41%収縮
 original_game/com/TextMaker.classを追加中です(入=904)(出=553)(38%収縮されました)
 ```
 
-> これで、ようやく、Jarファイルを使用するJAVA実行が成功します。
+> これで、ようやく、Jarファイルを使用するJAVA実行が成功します。:tea::sushi:
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>java -jar JankenGame.jar
 ```
