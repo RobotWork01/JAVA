@@ -12,7 +12,7 @@ TextMaker.java
 
 # :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合<br/>
 
-JankenGame.zipをお好みの場所にダウンロードしてください。
+[JankenGame.zip](https://github.com/RobotWork01/JAVA/blob/main/JankenGame.zip)をお好みの場所にダウンロードしてください。
 
 :monocle_face:JankenGame.zipのフォルダ、ファイル構成は次のとおりです:tipping_hand_woman::
 ```
@@ -58,12 +58,12 @@ C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>
 ```
 
 ><b>＜開発時のJAVA実行方法＞</b>
->●javawコマンドでJAVA実行に成功する。
+> javawコマンドでJAVA実行に成功する。
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game>cd ..
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>javaw -Dfile.encoding=UTF-8  original_game.com.Main
 ```
-> ●中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）
+> 中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>dir/B
 ComputerHand.class
@@ -75,7 +75,7 @@ PanelMaker.class
 TextMaker.class
 ```
 > <b>＜配布時にはJarファイル１つに纏めて配布します＞</b>
-> ●jarコマンドで１つに纏める（圧縮ファイル「JankenGame.jar」が作成される）
+> jarコマンドで１つに纏める（圧縮ファイル「JankenGame.jar」が作成される）
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
 マニフェストが追加されました
@@ -87,7 +87,7 @@ PanelMaker.classを追加中です(入=855)(出=499)(41%収縮されました)
 TextMaker.classを追加中です(入=904)(出=553)(38%収縮されました)
 ```
 
-> ●jarコマンドで圧縮ファイルを１度解凍する。（作成した圧縮ファイル「JankenGame.jar」を解凍する）
+> jarコマンドで圧縮ファイルを１度解凍する。（作成した圧縮ファイル「JankenGame.jar」を解凍する）
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>jar xvf JankenGame.jar
   META-INF/が作成されました
