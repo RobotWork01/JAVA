@@ -1,10 +1,11 @@
 参考：https://original-game.com/java-janken-game-program/#m_heading-13<br/>
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
-<span style="color: blue;">じゃんけんゲームJAVAプログラムファイル名一覧</span>
+<span style="color: blue;">じゃんけんゲームJAVAプログラムファイル名一覧 </span>
+
 ```
 ComputerHand.java
-Judge.java
+Judge.java　
 Main.java
 PanelMaker.java
 TextMaker.java
