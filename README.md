@@ -9,7 +9,7 @@ PanelMaker.java<br/>
 TextMaker.java<br/>
 <hr>
 <pre>
-●ダウンロードしたい場合
+> ダウンロードしたい場合
   JankenGame.zipをお好みの場所にダウンロードしてください。
 
 JankenGame.zip:
