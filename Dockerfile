@@ -5,11 +5,9 @@ WORKDIR /app
 
 # Javaファイルをコピー
 COPY ComputerHand.java
-COPY Dockerfile
 COPY Judge.java
 COPY Main.java
 COPY PanelMaker.java
-COPY render.yaml
 COPY TextMaker.java
 
 # Javaファイルをコンパイル
