@@ -4,7 +4,13 @@ FROM openjdk:11-slim
 WORKDIR /app
 
 # Javaファイルをコピー
-COPY Main.java /app
+COPY ComputerHand.java
+COPY Dockerfile
+COPY Judge.java
+COPY Main.java
+COPY PanelMaker.java
+COPY render.yaml
+COPY TextMaker.java
 
 # Javaファイルをコンパイル
 RUN javac Main.java
