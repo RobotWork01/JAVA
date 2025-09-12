@@ -10,7 +10,7 @@ PanelMaker.java
 TextMaker.java
 ```
 
-> :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合<br/>
+# :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合<br/>
 
 JankenGame.zipをお好みの場所にダウンロードしてください。
 
