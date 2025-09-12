@@ -9,7 +9,7 @@ Main.java
 PanelMaker.java
 TextMaker.java
 ```
-> [!TIP] :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合<br/>
+> [!TIP] :grinning:じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合
 JankenGame.zipをお好みの場所にダウンロードしてください。<br/>
 
 :monocle_face:JankenGame.zipのフォルダ、ファイル構成は次のとおりです:tipping_hand_woman::
