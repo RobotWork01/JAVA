@@ -8,7 +8,7 @@ Main.java<br/>
 PanelMaker.java<br/>
 TextMaker.java<br/>
 <hr/>
-> [!NOTE]ダウンロードしたい場合
+> [!NOTE]:grinning:ダウンロードしたい場合
 > JankenGame.zipをお好みの場所にダウンロードしてください。
 
 JankenGame.zip:
