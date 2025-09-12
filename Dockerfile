@@ -4,11 +4,11 @@ FROM openjdk:11-slim
 WORKDIR /app
 
 # Javaファイルをコピー
-COPY ComputerHand.java
-COPY Judge.java
-COPY Main.java
-COPY PanelMaker.java
-COPY TextMaker.java
+COPY ComputerHand.java /app/ComputerHand.java
+COPY Judge.java /app/Judge.java
+COPY Main.java /app/Main.java
+COPY PanelMaker.java /app/PanelMaker.java
+COPY TextMaker.java /app/TextMaker.java
 
 # Javaファイルをコンパイル
 RUN javac Main.java
