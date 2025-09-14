@@ -38,7 +38,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
 ```
 
 ## $\textcolor{green}{中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）}$
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>dir/B
+dir/B
+```
 ComputerHand.class
 JankenGame.jar
 Judge.class
@@ -46,6 +47,7 @@ Main$ButtonActionListener.class
 Main.class
 PanelMaker.class
 TextMaker.class
+```
 
 ## $\textcolor{green}{＜配布時にはJarファイル１つに纏めて配布します＞}$
 jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
