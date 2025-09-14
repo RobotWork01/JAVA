@@ -41,6 +41,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
 ```
 
 ## $\textcolor{green}{中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）}$
+
 dir/B
 
 ```
@@ -54,6 +55,7 @@ TextMaker.class
 ```
 
 ## $\textcolor{green}{＜配布時にはJarファイル１つに纏めて配布します＞}$
+
 jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
 
 ```
@@ -67,7 +69,9 @@ TextMaker.classを追加中です(入=904)(出=553)(38%収縮されました)
 ```
 
 ## $\textcolor{green}{作成した圧縮ファイル「JankenGame.jar」を解凍する}$
+
 jar xvf JankenGame.jar
+
 ```
   META-INF/が作成されました
  META-INF/MANIFEST.MFが展開されました
@@ -80,7 +84,9 @@ jar xvf JankenGame.jar
 ```
 
 ## $\textcolor{green}{treeコマンドでフォルダとファイル構成（中身）を確認する。（マニフェストファイルが作成されていることを確認する）}$
+
 tree/F
+
 ```
 フォルダー パスの一覧:  ボリューム Windows
 ボリューム シリアル番号は B825-1DF9 です
@@ -102,6 +108,7 @@ C:.
 ```
 
 ## $\textcolor{green}{マニフェストファイル（META-INF\MANIFEST.MF）に次の 1行を追加します。}$
+
 type original_game\com\META-INF\MANIFEST.MF
 
 ```
@@ -111,6 +118,7 @@ Main-Class: original_game.com.Main
 ```
 
 ## $\textcolor{green}{今度は、１行追加したマニフェストファイルを加えて もう一度jar ファイル１つに纏める（圧縮ファイル「JankenGame.jar」が再度作成される）}$
+
 jar cvfm JankenGame.jar original_game\com\META-INF\MANIFEST.MF original_game\com\*.class
 
 ```
@@ -124,7 +132,10 @@ original_game/com/TextMaker.classを追加中です(入=904)(出=553)(38%収縮�
 ```
 
 ## $\textcolor{green}{これで、ようやく、Jarファイルを使用するJAVA実行が成功します。}$
+
+```
 java -jar JankenGame.jar
+```
 
 ## $\textcolor{green}{じゃんけんゲームJAVAプログラムファイル名一覧 }$
 
@@ -178,18 +189,17 @@ C:.
                 render.yaml
                 TextMaker.java
 
-
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>
 ```
 
 ><b>＜開発時のJAVA実行方法＞</b>
-> javawコマンドでJAVA実行に成功する。
+> javawコマンドでJAVA実行する。
 
 ```
 javaw -Dfile.encoding=UTF-8  original_game.com.Main
 ```
 
 > 中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）
+
 dir/B
 
 ```
@@ -201,8 +211,10 @@ Main.class
 PanelMaker.class
 TextMaker.class
 ```
+
 > <b>＜配布時にはJarファイル１つに纏めて配布します＞</b>
 > jarコマンドで１つに纏める（圧縮ファイル「JankenGame.jar」が作成される）
+
 jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
 
 ```
@@ -216,10 +228,11 @@ TextMaker.classを追加中です(入=904)(出=553)(38%収縮されました)
 ```
 
 > jarコマンドで圧縮ファイルを１度解凍する。（作成した圧縮ファイル「JankenGame.jar」を解凍する）
+
 jar xvf JankenGame.jar
 
 ```
-  META-INF/が作成されました
+ META-INF/が作成されました
  META-INF/MANIFEST.MFが展開されました
  ComputerHand.classが展開されました
  Judge.classが展開されました
@@ -228,7 +241,9 @@ jar xvf JankenGame.jar
  PanelMaker.classが展開されました
  TextMaker.classが展開されました
 ```
+
 > treeコマンドでフォルダとファイル構成（中身）を確認する。（マニフェストファイルが作成されていることを確認する）
+
 tree/F
 
 ```
@@ -252,6 +267,7 @@ C:.
 ```
 
 > マニフェストファイル（META-INF\MANIFEST.MF）に次の 1行を追加します。
+
 type original_game\com\META-INF\MANIFEST.MF
 
 ```
@@ -261,6 +277,7 @@ Main-Class: original_game.com.Main
 ```
 
 > 今度は、１行追加したマニフェストファイルを加えて もう一度jar ファイル１つに纏める（圧縮ファイル「JankenGame.jar」が再度作成される）
+
 jar cvfm JankenGame.jar original_game\com\META-INF\MANIFEST.MF original_game\com\*.class
 
 ```
