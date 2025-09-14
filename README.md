@@ -180,13 +180,15 @@ C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>
 
 ><b>＜開発時のJAVA実行方法＞</b>
 > javawコマンドでJAVA実行に成功する。
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game>cd ..
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>javaw -Dfile.encoding=UTF-8  original_game.com.Main
+javaw -Dfile.encoding=UTF-8  original_game.com.Main
 ```
+
 > 中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）
+dir/B
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>dir/B
 ComputerHand.class
 JankenGame.jar
 Judge.class
