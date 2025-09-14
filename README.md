@@ -149,7 +149,8 @@ TextMaker.java
 
 ## :grinning: $\textcolor{green}{じゃんけんゲームJAVAプログラム一式をダウンロードしたい場合}$
 [JankenGame.zip](https://github.com/RobotWork01/JAVA/blob/main/JankenGame.zip)をお好みの場所にダウンロードしてください。
-monocle_face:JankenGame.zipのフォルダ、ファイル構成は次のとおりです:tipping_hand_woman::
+
+:monocle_face: JankenGame.zipのフォルダ、ファイル構成は次のとおりです :tipping_hand_woman:
 
 ```
 C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame>tree/F
