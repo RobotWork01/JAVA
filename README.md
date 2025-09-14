@@ -23,6 +23,7 @@ echo %JAVA_HOME%
 ```
 C:\Program Files\Java\jdk-14.0.2
 ```
+
 ＜確認手順＞
 ```
 もしもJAVAが既にインストールされていると環境変数%JAVA_HOME%が作成済になっています。
@@ -32,6 +33,7 @@ C:\Program Files\Java\jdk-14.0.2
 
 ## $\textcolor{green}{JAVAインストール確認}$
 java -version
+
 ```
 java version "14.0.2" 2020-07-14
 Java(TM) SE Runtime Environment (build 14.0.2+12-46)
@@ -40,6 +42,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 14.0.2+12-46, mixed mode, sharing)
 
 ## $\textcolor{green}{中身を確認する。（圧縮ファイル「JankenGame.jar」を作成する前）}$
 dir/B
+
 ```
 ComputerHand.class
 JankenGame.jar
@@ -52,6 +55,7 @@ TextMaker.class
 
 ## $\textcolor{green}{＜配布時にはJarファイル１つに纏めて配布します＞}$
 jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
+
 ```
 マニフェストが追加されました
 ComputerHand.classを追加中です(入=506)(出=333)(34%収縮されました)
