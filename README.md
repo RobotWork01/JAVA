@@ -3,16 +3,16 @@
 
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
-参考：
+参考：<br/>
 <a href="https://tenshoku.mynavi.jp/engineer/guide/articles/Zw4ZcBEAAB8AaS2L">https://tenshoku.mynavi.jp/engineer/guide/articles/Zw4ZcBEAAB8AaS2L</a><br/>
 <a href="https://qiita.com/iiko/items/04060864e1560c0a473a">https://qiita.com/iiko/items/04060864e1560c0a473a</a><br/>
 
 ## $\textcolor{green}{オールインワンの最新版をダウンロードする。（日本語化した環境）}$
-参考：
+参考：<br/>
 <a href="https://willbrains.jp/index.html#/pleiades_distros2025.html">https://willbrains.jp/index.html#/pleiades_distros2025.html</a></br>
 
 ## $\textcolor{green}{render.comアカウントの作り方（JAVA実行環境）}$
-参考：
+参考：<br/>
 <a href="https://monomonotech.jp/kurage/memo/m250715_render_get_started">https://monomonotech.jp/kurage/memo/m250715_render_get_started</a></br>
 
 ## $\textcolor{green}{＜開発時のJAVA実行方法＞}$
