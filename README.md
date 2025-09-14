@@ -197,8 +197,9 @@ TextMaker.class
 ```
 > <b>＜配布時にはJarファイル１つに纏めて配布します＞</b>
 > jarコマンドで１つに纏める（圧縮ファイル「JankenGame.jar」が作成される）
+jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>jar cvfm JankenGame.jar META-INF\MANIFEST.MF *.class
 マニフェストが追加されました
 ComputerHand.classを追加中です(入=506)(出=333)(34%収縮されました)
 Judge.classを追加中です(入=734)(出=517)(29%収縮されました)
@@ -209,8 +210,9 @@ TextMaker.classを追加中です(入=904)(出=553)(38%収縮されました)
 ```
 
 > jarコマンドで圧縮ファイルを１度解凍する。（作成した圧縮ファイル「JankenGame.jar」を解凍する）
+jar xvf JankenGame.jar
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\original_game\com>jar xvf JankenGame.jar
   META-INF/が作成されました
  META-INF/MANIFEST.MFが展開されました
  ComputerHand.classが展開されました
@@ -221,8 +223,9 @@ C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin\origina
  TextMaker.classが展開されました
 ```
 > treeコマンドでフォルダとファイル構成（中身）を確認する。（マニフェストファイルが作成されていることを確認する）
+tree/F
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>tree/F
 フォルダー パスの一覧:  ボリューム Windows
 ボリューム シリアル番号は B825-1DF9 です
 C:.
@@ -243,16 +246,18 @@ C:.
 ```
 
 > マニフェストファイル（META-INF\MANIFEST.MF）に次の 1行を追加します。
+type original_game\com\META-INF\MANIFEST.MF
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>type original_game\com\META-INF\MANIFEST.MF
 Manifest-Version: 1.0
 Created-By: 11.0.12 (Microsoft)
 Main-Class: original_game.com.Main
 ```
 
 > 今度は、１行追加したマニフェストファイルを加えて もう一度jar ファイル１つに纏める（圧縮ファイル「JankenGame.jar」が再度作成される）
+jar cvfm JankenGame.jar original_game\com\META-INF\MANIFEST.MF original_game\com\*.class
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>jar cvfm JankenGame.jar original_game\com\META-INF\MANIFEST.MF original_game\com\*.class
 マニフェストが追加されました
 original_game/com/ComputerHand.classを追加中です(入=506)(出=333)(34%収縮されました)
 original_game/com/Judge.classを追加中です(入=734)(出=517)(29%収縮されました)
@@ -263,6 +268,7 @@ original_game/com/TextMaker.classを追加中です(入=904)(出=553)(38%収縮�
 ```
 
 > これで、ようやく、Jarファイルを使用するJAVA実行が成功します。 :tea: :sushi:
+
 ```
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\JankenGame\bin>java -jar JankenGame.jar
+java -jar JankenGame.jar
 ```
