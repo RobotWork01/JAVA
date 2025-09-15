@@ -2,12 +2,11 @@
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
 ## $\textcolor{green}{じゃんけんゲーム実行exeファイル}$
-参考：<br/>
-<a href="https://github.com/RobotWork01/JAVA/releases/download/untagged-15e8aa687ce7795fb9e0/JankenGame.exe">https://github.com/RobotWork01/JAVA/releases/download/untagged-15e8aa687ce7795fb9e0/JankenGame.exe</a>
-
+参考：GitHubの使い方/自作プログラムと.exeファイルの公開方法<br/>
+<a href="https://signyamo.blog/github_exe/">https://signyamo.blog/github_exe/</a>
 
 リンク：<br/>
-<a href="https://github.com/RobotWork01/JAVA-_exe/blob/main/JankenGame.exe">https://github.com/RobotWork01/JAVA-_exe/blob/main/JankenGame.exe</a>
+<a href="">JankenGame.exe</a>
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
 参考：<br/>
