@@ -8,6 +8,9 @@
 リンク：<br/>
 <a href="https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe" target="_blank" rel="nofollow noreferrer">じゃんけんゲーム　JankenGame.exe</a>←こちらをクリックするとダウンロードされます<br/>
 
+## $\textcolor{green}{じゃんけんゲームのライセンス}$
+<img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
+
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
 参考：<br/>
 <a href="https://tenshoku.mynavi.jp/engineer/guide/articles/Zw4ZcBEAAB8AaS2L">https://tenshoku.mynavi.jp/engineer/guide/articles/Zw4ZcBEAAB8AaS2L</a><br/>
