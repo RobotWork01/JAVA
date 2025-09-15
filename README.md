@@ -5,7 +5,7 @@
 参考：GitHubの使い方/自作プログラムと.exeファイルの公開方法<br/>
 <a href="https://signyamo.blog/github_exe/">https://signyamo.blog/github_exe/</a>
 
-リンク：https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe<br/>
+リンク：<br/>
 <a href="https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe" target="_blank" rel="nofollow noreferrer">じゃんけんゲーム　JankenGame.exe</a>←こちらをクリックするとダウンロードされます<br/>
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
