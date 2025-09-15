@@ -6,7 +6,6 @@
 <a href="https://signyamo.blog/github_exe/">https://signyamo.blog/github_exe/</a>
 
 リンク：<br/>
-https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe
 <a href="https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe">じゃんけんゲーム</a>
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
