@@ -299,4 +299,5 @@ java -jar JankenGame.jar
 参考：<br/>
 Eclipse導入からJavaプログラムをexeファイルで実行するまで<br/>
 <a href="https://qiita.com/Tanakadesu/items/79c4a0744f2874207213">https://qiita.com/Tanakadesu/items/79c4a0744f2874207213</a>
-<img width="1109" height="869" alt="image" src="https://github.com/user-attachments/assets/b234586a-d74c-42de-88d9-bb1a1e9df0e5" />
+<img width="1152" height="869" alt="image" src="https://github.com/user-attachments/assets/2a2408de-52ac-49bd-8ca7-09d19a559a0f" />
+
