@@ -12,12 +12,12 @@
 
 ## $\textcolor{green}{じゃんけんゲームのライセンス}$
 <a href="https://github.com/RobotWork01/JAVA/blob/main/LICENSE">https://github.com/RobotWork01/JAVA/blob/main/LICENSE</a>
+＜ライセンスの日本語訳＞<br/>
+<img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
 
 参考：<br/>
 <a href="https://qiita.com/legitwhiz/items/bb34ef20ba23336e0c87">GitHubで公開したソースにオープンソースライセンスを適用</a>
 
-＜ライセンスの日本語訳＞<br/>
-<img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
 参考：<br/>
