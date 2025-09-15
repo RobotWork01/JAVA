@@ -296,3 +296,7 @@ original_game/com/TextMaker.classを追加中です(入=904)(出=553)(38%収縮�
 ```
 java -jar JankenGame.jar
 ```
+参考：<br/>
+Eclipse導入からJavaプログラムをexeファイルで実行するまで<br/>
+<a href="https://qiita.com/Tanakadesu/items/79c4a0744f2874207213">https://qiita.com/Tanakadesu/items/79c4a0744f2874207213</a>
+<img width="1109" height="869" alt="image" src="https://github.com/user-attachments/assets/b234586a-d74c-42de-88d9-bb1a1e9df0e5" />
