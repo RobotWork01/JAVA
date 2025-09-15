@@ -3,7 +3,7 @@
 
 ## $\textcolor{green}{じゃんけんゲーム実行exeファイル}$
 参考：<br/>
-<a href="https://github.com/RobotWork01/JAVA-_exe/releases/download/1.0.0/JankenGame.exe">じゃんけんゲーム </a>
+<a href="https://github.com/RobotWork01/JAVA/releases/download/untagged-15e8aa687ce7795fb9e0/JankenGame.exe">https://github.com/RobotWork01/JAVA/releases/download/untagged-15e8aa687ce7795fb9e0/JankenGame.exe</a>
 
 
 リンク：<br/>
