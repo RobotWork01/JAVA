@@ -319,8 +319,7 @@ java -jar JankenGame.jar
 <img width="1152" height="869" alt="image" src="https://github.com/user-attachments/assets/2a2408de-52ac-49bd-8ca7-09d19a559a0f" />
 
 　参考：<br/>
-　Eclipse導入からJavaプログラムをexeファイルで実行するまで<br/>
-<a href="https://qiita.com/Tanakadesu/items/79c4a0744f2874207213">https://qiita.com/Tanakadesu/items/79c4a0744f2874207213</a>
+　Eclipse導入からJavaプログラムをexeファイルで実行するまで　<a href="https://qiita.com/Tanakadesu/items/79c4a0744f2874207213">https://qiita.com/Tanakadesu/items/79c4a0744f2874207213</a><br/>
 
 # License
 The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
