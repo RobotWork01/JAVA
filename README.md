@@ -11,8 +11,9 @@
 <a href="https://github.com/RobotWork01/JAVA/releases/tag/1.1.1">リリース初回</a>←こちらをクリックするとリリース画面にリンクします<br/>
 
 ## $\textcolor{green}{じゃんけんゲームのライセンス}$
-<a href="https://github.com/RobotWork01/JAVA/blob/main/LICENSE">https://github.com/RobotWork01/JAVA/blob/main/LICENSE</a>
-＜ライセンスの日本語訳＞<br/>
+<a href="https://github.com/RobotWork01/JAVA/blob/main/LICENSE">https://github.com/RobotWork01/JAVA/blob/main/LICENSE</a><br/>
+　　↓　↓　↓
+＜ライセンスの日本語訳はこちら＞<br/>
 <img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
 
 参考：<br/>
