@@ -11,6 +11,8 @@
 <a href="https://github.com/RobotWork01/JAVA/releases/tag/1.1.1">リリース初回</a>←こちらをクリックするとリリース画面にリンクします<br/>
 
 ## $\textcolor{green}{じゃんけんゲームのライセンス}$
+<a href="https://github.com/RobotWork01/JAVA/blob/main/LICENSE">https://github.com/RobotWork01/JAVA/blob/main/LICENSE</a>
+
 参考：<br/>
 <a href="https://qiita.com/legitwhiz/items/bb34ef20ba23336e0c87">GitHubで公開したソースにオープンソースライセンスを適用</a>
 
