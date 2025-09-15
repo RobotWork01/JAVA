@@ -5,8 +5,10 @@
 参考：GitHubの使い方/自作プログラムと.exeファイルの公開方法<br/>
 <a href="https://signyamo.blog/github_exe/">https://signyamo.blog/github_exe/</a>
 
-リンク：<br/>
+各種リンク：<br/>
 <a href="https://github.com/RobotWork01/JAVA/releases/download/1.1.1/JankenGame.exe" target="_blank" rel="nofollow noreferrer">じゃんけんゲーム　JankenGame.exe</a>←こちらをクリックするとダウンロードされます<br/>
+
+<a href="https://github.com/RobotWork01/JAVA/releases/tag/1.1.1">リリース初回</a>←こちらをクリックするとリリース画面にリンクします<br/>
 
 ## $\textcolor{green}{じゃんけんゲームのライセンス}$
 <img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
