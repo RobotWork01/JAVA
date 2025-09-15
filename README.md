@@ -2,7 +2,7 @@
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
 ## $\textcolor{green}{じゃんけんゲーム実行exeファイル}$
-参考：GitHubの使い方/自作プログラムと.exeファイルの公開方法<br/>
+参考：GitHubの使い方/自作プログラムと.exeファイルの公開方法(ライセンスファイルｎ作り方)<br/>
 <a href="https://signyamo.blog/github_exe/">https://signyamo.blog/github_exe/</a>
 
 各種リンク：<br/>
@@ -11,6 +11,10 @@
 <a href="https://github.com/RobotWork01/JAVA/releases/tag/1.1.1">リリース初回</a>←こちらをクリックするとリリース画面にリンクします<br/>
 
 ## $\textcolor{green}{じゃんけんゲームのライセンス}$
+参考：<br/>
+<a href="https://qiita.com/legitwhiz/items/bb34ef20ba23336e0c87">GitHubで公開したソースにオープンソースライセンスを適用</a>
+
+＜ライセンスの日本語訳＞<br/>
 <img width="1912" height="1027" alt="image" src="https://github.com/user-attachments/assets/df9522ed-4847-44a8-af91-7ae84e1f4bd3" />
 
 ## $\textcolor{green}{EclipseをインストールしてJavaの開発環境を整えよう}$
@@ -312,3 +316,5 @@ Eclipse導入からJavaプログラムをexeファイルで実行するまで<br
 <a href="https://qiita.com/Tanakadesu/items/79c4a0744f2874207213">https://qiita.com/Tanakadesu/items/79c4a0744f2874207213</a>
 <img width="1152" height="869" alt="image" src="https://github.com/user-attachments/assets/2a2408de-52ac-49bd-8ca7-09d19a559a0f" />
 
+# License
+The source code is licensed MIT. The website content is licensed CC BY 4.0,see LICENSE.
