@@ -297,7 +297,8 @@ original_game/com/TextMaker.classを追加中です(入=904)(出=553)(38%収縮�
 java -jar JankenGame.jar
 ```
 
-> Jarファイルからexeファイルを作成出来ます。（まず、Launch4jをダウンロード　→　次に、Launch4jを使ってexeファイルにする）
+###　exeファイルの作り方　（Launch4jを使ってexeファイルにする）
+Jarファイルからexeファイルを作成出来ます。（まず、Launch4jをダウンロード　→　次に、Launch4jを使ってexeファイルにする）
 <img width="1152" height="869" alt="image" src="https://github.com/user-attachments/assets/2a2408de-52ac-49bd-8ca7-09d19a559a0f" />
 
 　参考：<br/>
