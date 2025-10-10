@@ -1,3 +1,7 @@
+# じゃんけんゲーム
+<img width="784" height="592" alt="image" src="https://github.com/user-attachments/assets/f35d0738-adf5-46df-b3de-3f8795792fa8" />
+
+
 参考：https://original-game.com/java-janken-game-program/#m_heading-13<br/>
 【絶対できる！】Javaでのじゃんけんゲームの作り方<br/>
 
